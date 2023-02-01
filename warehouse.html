@@ -1,0 +1,323 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Select Warehouse </title>
+    <style>
+        body {
+            font-family: 'Roboto Condensed', sans-serif;
+            color: #262626;
+            margin: 5% 0;
+        }
+
+        .container {
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        @media (min-width: 1200px) {
+            .container {
+                max-width: 1140px;
+            }
+        }
+
+        .d-flex {
+            display: flex;
+            flex-direction: column;
+            background: #f6f6f6;
+            border-radius: 0 0 5px 5px;
+            padding: 25px;
+        }
+
+        form {
+            flex: 4;
+        }
+
+        .Yorder {
+            flex: 2;
+        }
+
+        .title {
+            background: -webkit-gradient(linear, left top, right bottom, color-stop(0, #5195A8), color-stop(100, #70EAFF));
+            background: -moz-linear-gradient(top left, #5195A8 0%, #70EAFF 100%);
+            background: -ms-linear-gradient(top left, #5195A8 0%, #70EAFF 100%);
+            background: -o-linear-gradient(top left, #5195A8 0%, #70EAFF 100%);
+            background: linear-gradient(to bottom right, #5195A8 0%, #70EAFF 100%);
+            border-radius: 5px 5px 0 0;
+            padding: 20px;
+            color: #f6f6f6;
+        }
+
+        h2 {
+            margin: 0;
+            padding-left: 15px;
+        }
+
+        .required {
+            color: red;
+        }
+
+        /* label {
+            display: block;
+            margin: 15px; */
+        /* } */
+
+        table {
+            display: block;
+            margin: 15px;
+            width: 100%;
+        }
+
+        label>span {
+            float: left;
+            width: 25%;
+            margin-top: 12px;
+            padding-right: 10px;
+        }
+
+        input[type="email"] {
+            width: 70%;
+            height: 30px;
+            padding: 5px 10px;
+            margin-bottom: 10px;
+            border: 1px solid #dadada;
+            color: #888;
+        }
+
+        select {
+            width: 70%;
+            height: 30px;
+            padding: 5px 10px;
+            margin-bottom: 10px;
+            border: 1px solid #dadada;
+            color: #888;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            height: 30px;
+            padding: 5px 10px;
+            margin-bottom: 10px;
+            border: 1px solid #dadada;
+            color: #888;
+        }
+
+        input[type="tel"] {
+            width: 100%;
+            height: 30px;
+            padding: 5px 10px;
+            margin-bottom: 10px;
+            border: 1px solid #dadada;
+            color: #888;
+        }
+
+        select {
+            width: 72%;
+            height: 45px;
+            padding: 5px 10px;
+            margin-bottom: 10px;
+        }
+
+        .Yorder {
+            margin-top: 15px;
+            height: 600px;
+            padding: 20px;
+            border: 1px solid #dadada;
+        }
+
+        table {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+
+        th {
+            border-bottom: 1px solid #dadada;
+            padding: 10px 0;
+        }
+
+        tr>td:nth-child(1) {
+            text-align: left;
+            color: #2d2d2a;
+        }
+
+        tr>td:nth-child(2) {
+            text-align: right;
+            color: #52ad9c;
+        }
+
+        td {
+            border-bottom: 1px solid #dadada;
+            padding: 25px 25px 25px 0;
+        }
+
+        p {
+            display: block;
+            color: #888;
+            margin: 0;
+            padding-left: 25px;
+        }
+
+        .Yorder>div {
+            padding: 15px 0;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 10px;
+            padding: 10px;
+            border: none;
+            border-radius: 30px;
+            background: #52ad9c;
+            color: #fff;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        button:hover {
+            cursor: pointer;
+            background: #428a7d;
+        }
+        table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: full;
+}
+button.b2{
+    width: 10%;
+    position: sticky;
+    right: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.next {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.round {
+  border-radius: 50%;
+}
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.next {
+  background-color: #04AA6D;
+  color: white;
+}
+    </style>
+</head>
+
+<body>
+    <script>
+        function myFunction() {
+          location.replace("thankyou.html")
+        }
+        </script>
+    <div class="container">
+        <div class="title">
+    <h2>Choose Near-by Warehouses from the Database</h2>
+    </div>
+    <div class="d-flex">
+        <span class="fname">
+<table><centre></centre>
+  <tr>
+    <th>S.no</th>
+    <th>Near-by warehouses</th>
+    <th>Street address</th>
+    <th>Contact no.</th>
+  </tr>
+  <tr>
+    <th><div class="radio">
+        <label>1.<input type="radio" name="optradio"></label>
+   </div></th>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <th><div class="radio">
+        <label>2.<input type="radio" name="optradio"></label>
+   </div></th>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+  <tr>
+    <th><div class="radio">
+        <label>3.<input type="radio" name="optradio"></label>
+   </div></th>
+    <td>Ernst Handel</td>
+    <td>Roland Mendel</td>
+    <td>Austria</td>
+  </tr>
+  <tr>
+    <th><div class="radio">
+        <label>4.<input type="radio" name="optradio"></label>
+   </div></th>
+    <td>Island Trading</td>
+    <td>Helen Bennett</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td><div class="radio">
+        <label>5.<input type="radio" name="optradio"></label>
+   </div></td>
+    <td>Laughing Bacchus Winecellars</td>
+    <td>Yoshi Tannamuri</td>
+    <td>Canada</td>
+  </tr>
+  <tr>
+    <td ><div class="radio">
+        <label>6.<input type="radio" name="optradio"></label>
+   </div></td>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Giovanni Rovelli</td>
+    <td>Italy</td>
+  </tr></centre>
+</table>
+</span>
+<div class="Yorder">
+    <br>  <p>
+   Make sure ur Product details is Correct & Complete    </p>
+
+       <button type="button" onclick="myFunction()">Request-Seller </button>
+     </div>
+</div>
+
+</div>
+<a href="#" class="previous">&laquo; Previous</a>
+<a href="#" class="next">Next &raquo;</a>
+</body>
+</html>
